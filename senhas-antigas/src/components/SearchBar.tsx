@@ -9,11 +9,7 @@ type Props = {
   placeholder?: string;
 };
 
-export function SearchBar({
-  value,
-  onChangeText,
-  placeholder = 'Buscar...',
-}: Props) {
+export function SearchBar({ value, onChangeText, placeholder = 'Buscar...' }: Props) {
   const [focused, setFocused] = useState(false);
 
   return (

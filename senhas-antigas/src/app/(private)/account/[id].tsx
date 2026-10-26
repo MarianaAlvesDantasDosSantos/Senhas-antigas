@@ -22,6 +22,7 @@ export default function AccountDetail() {
   }
 
   function confirmDelete() {
+    if (!account) return null;
     Alert.alert('Excluir conta', `Remover "${account.site}"?`, [
       { text: 'Cancelar', style: 'cancel' },
       {
